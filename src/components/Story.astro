@@ -13,10 +13,10 @@ const timeline = ['t1', 't2', 't3', 't4', 't5', 't6'];
         <T as="h3" k="tape.title" id="tape-title" class="label !text-silver" />
         <span class="display text-sm tracking-[0.2em] text-blood">WKF</span>
       </div>
-      <p class="display outline-text mt-5 text-[clamp(5.5rem,12vw,9rem)] leading-[0.8]" aria-hidden="true">RT</p>
+      <p class="rt display outline-text mt-5 text-[clamp(5.5rem,12vw,9rem)] leading-[0.8]" aria-hidden="true">RT</p>
       <dl class="mt-8">
         {tape.map((k) => (
-          <div class="tape-row flex items-baseline justify-between gap-6 py-3.5">
+          <div style={`--i:${tape.indexOf(k)}`} class="tape-row flex items-baseline justify-between gap-6 py-3.5">
             <T as="dt" k={`tape.${k}.k`} class="text-sm text-ash" />
             <T as="dd" k={`tape.${k}.v`} class="text-right font-semibold text-chalk" />
           </div>
@@ -30,10 +30,10 @@ const timeline = ['t1', 't2', 't3', 't4', 't5', 't6'];
       <T as="h2" k="story.title" id="povestea-title" class="display metal section-title reveal" />
       <T as="p" k="story.lead" class="reveal mt-6 max-w-[58ch] text-xl leading-relaxed text-chalk sm:text-2xl" />
 
-      <ol class="mt-12 border-l border-white/10">
+      <ol class="timeline reveal-line relative mt-12">
         {timeline.map((k, i) => (
           <li class="reveal relative pb-9 pl-8 last:pb-0" style={`--d:${i * 60}ms`}>
-            <span class={`absolute -left-[5px] top-2 size-[9px] ${k === 't5' ? 'bg-blood' : 'bg-silver'}`} aria-hidden="true"></span>
+            <span class={`dot absolute -left-[4px] top-2 size-[9px] ${k === 't5' ? 'bg-blood' : 'bg-silver'}`} aria-hidden="true"></span>
             <T as="p" k={`story.${k}.when`} class="display text-2xl text-silver" />
             <T as="p" k={`story.${k}.what`} class="mt-1.5 max-w-[56ch] text-[1.05rem] text-chalk/80" />
           </li>

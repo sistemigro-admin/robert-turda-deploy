@@ -4,7 +4,7 @@ import Icon from './Icon.astro';
 import { contact } from '../data/content';
 ---
 <section id="contact" class="relative bg-pit" aria-labelledby="contact-title">
-  <hr class="red-rule" />
+  <hr class="red-rule draw" />
   <div class="mx-auto max-w-5xl px-4 py-24 text-center sm:px-6 sm:py-32">
     <T as="p" k="contact.kicker" class="label reveal !text-blood" />
     <T as="h2" k="contact.headline" id="contact-title"
@@ -16,7 +16,7 @@ import { contact } from '../data/content';
         <Icon name="phone" size={20} />
         <T k="contact.cta" />
       </a>
-      <a href={contact.phoneHref} class="display text-[clamp(2rem,5vw,3rem)] tracking-wide text-chalk transition-colors hover:text-silver">{contact.phoneDisplay}</a>
+      <a href={contact.phoneHref} class="phone-big display text-[clamp(2rem,5vw,3rem)] tracking-wide text-chalk">{contact.phoneDisplay}</a>
       <a href={contact.facebook} target="_blank" rel="noopener" class="nav-link !normal-case !tracking-normal !text-base">
         <T k="contact.fb" />
       </a>

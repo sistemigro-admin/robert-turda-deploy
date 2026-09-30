@@ -186,6 +186,44 @@ u {
 .card .arrow { color: var(--color-blood); transition: transform 150ms ease; }
 .card:hover .arrow { transform: translateX(4px); }
 
+/* ---------- Header state, scroll progress, active link ---------- */
+.site-header { transition: background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease; }
+.site-header.is-scrolled { background: rgba(17, 17, 17, 0.92); border-color: rgba(192, 57, 43, 0.25); box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.8); }
+.scroll-progress {
+  position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%;
+  background: var(--color-blood);
+  transform-origin: left; transform: scaleX(var(--progress, 0));
+}
+.nav-link.is-active { color: #fff; }
+.nav-link.is-active::after { transform: scaleX(1); }
+
+/* ---------- Timeline rail ---------- */
+.timeline::before {
+  content: ""; position: absolute; left: 0; top: 0.5rem; bottom: 0.5rem; width: 1px;
+  background: linear-gradient(var(--color-blood), rgba(192, 192, 192, 0.15) 70%);
+  transform-origin: top;
+}
+
+/* Phone number hover */
+.phone-big { transition: color 200ms ease, letter-spacing 300ms var(--ease-jab); }
+.phone-big:hover { color: var(--color-silver); letter-spacing: 0.06em; }
+
+/* Card top edge */
+.card::before {
+  content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 2px;
+  background: var(--color-blood); transform: scaleX(0); transform-origin: left;
+  transition: transform 250ms var(--ease-jab);
+}
+.card:hover::before, .card:focus-visible::before { transform: scaleX(1); }
+.card .kick { transition: transform 600ms var(--ease-jab), -webkit-text-stroke-color 300ms ease; }
+.card:hover .kick { transform: translateX(-18px); -webkit-text-stroke-color: rgba(192, 192, 192, 0.6); }
+.btn .nudge { transition: transform 150ms ease; }
+.btn:hover .nudge { transform: translateX(4px); }
+.milestones .ms-red::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px;
+  background: var(--color-blood); transform-origin: left;
+}
+
 /* ---------- Motion ---------- */
 @media (prefers-reduced-motion: no-preference) {
   .kenburns { animation: kenburns 6s var(--ease-jab) both; }
@@ -207,6 +245,42 @@ u {
     0%, 100% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.45); }
     60% { box-shadow: 0 0 0 14px rgba(192, 57, 43, 0); }
   }
+
+
+  /* Word-by-word text (hero headline, quote) */
+  .split .w { display: inline-block; opacity: 0; transform: translateY(0.45em); transition: opacity 450ms var(--ease-jab), transform 450ms var(--ease-jab); transition-delay: calc(var(--base, 0ms) + var(--i) * var(--step, 40ms)); }
+  .split.go .w, .is-in .split .w { opacity: 1; transform: none; }
+  [data-split="hero"] { --base: 420ms; --step: 70ms; }
+  [data-split="quote"] { --base: 150ms; --step: 35ms; }
+  .split u { background-size: 0% 0.09em; transition: background-size 600ms var(--ease-jab) 1050ms; }
+  .split.go u { background-size: 100% 0.09em; }
+
+  /* Metallic sheen sweeps across titles as they enter */
+  .metal.reveal.is-in, .metal.reveal-zoom.is-in, .reveal-scale.is-in .poster-name { animation: sheen 1.6s ease-in-out 150ms both; }
+
+  /* Red rules draw left → right */
+  .draw { transform: scaleX(0); transform-origin: left; transition: transform 800ms var(--ease-jab); }
+  .draw.is-in { transform: scaleX(1); }
+  .grow-rule { transform: scaleX(0); transform-origin: left; transition: transform 700ms var(--ease-jab) 500ms; }
+  .is-in .grow-rule { transform: scaleX(1); }
+  .milestones .ms-red::before { transform: scaleX(0); transition: transform 700ms var(--ease-jab) 400ms; }
+  .milestones.is-in .ms-red::before { transform: scaleX(1); }
+
+  /* Timeline rail grows, dots punch in */
+  .timeline::before { transform: scaleY(0); transition: transform 1400ms var(--ease-jab); }
+  .timeline.is-in::before { transform: scaleY(1); }
+  .timeline .dot { transform: scale(0); transition: transform 300ms var(--ease-jab); transition-delay: calc(var(--d, 0ms) + 200ms); }
+  .timeline .is-in .dot { transform: none; }
+
+  /* Tale of the tape rows stagger in */
+  .plate .tape-row { opacity: 0; transform: translateX(-10px); transition: opacity 400ms var(--ease-jab), transform 400ms var(--ease-jab); transition-delay: calc(300ms + var(--i) * 80ms); }
+  .plate.is-in .tape-row { opacity: 1; transform: none; }
+  .plate .rt { opacity: 0; transition: opacity 900ms ease 200ms; }
+  .plate.is-in .rt { opacity: 1; }
+
+  /* Champion poster: 54 rises */
+  .poster .rise { opacity: 0; transform: translateY(60px); transition: opacity 900ms var(--ease-jab) 250ms, transform 1100ms var(--ease-jab) 250ms; }
+  .poster.is-in .rise { opacity: 1; transform: none; }
 
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 500ms var(--ease-jab), transform 500ms var(--ease-jab); transition-delay: var(--d, 0ms); }
   .reveal.is-in { opacity: 1; transform: none; }

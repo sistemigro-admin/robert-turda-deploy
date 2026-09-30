@@ -3,10 +3,10 @@ import T from './T.astro';
 ---
 <section class="relative overflow-hidden bg-concrete" aria-label="Citat">
   <div class="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-10">
-    <hr class="red-rule w-16 reveal" />
+    <hr class="red-rule draw w-16" />
     <figure class="reveal mt-8">
       <blockquote>
-        <T as="p" k="quote.text" class="display text-[clamp(2rem,5vw,4.25rem)] leading-[1.14] text-chalk" />
+        <T as="p" k="quote.text" data-split="quote" class="display split max-w-5xl text-[clamp(1.75rem,3.4vw,3rem)] leading-[1.32] tracking-[0.01em] text-chalk" />
       </blockquote>
       <figcaption class="label mt-8 !text-silver">Robert Turda</figcaption>
     </figure>

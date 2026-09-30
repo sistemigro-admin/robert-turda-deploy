@@ -21,7 +21,7 @@ const items = [
         <li class={`reveal ${it.cls}`} style={`--d:${i * 80}ms`}>
           <a href="#contact" class={`card group flex h-full flex-col p-7 sm:p-9 ${it.feature ? 'min-h-[20rem] justify-end overflow-hidden' : 'min-h-[16rem]'}`}>
             {it.feature && (
-              <span class="display outline-text pointer-events-none absolute -bottom-8 -right-3 select-none text-[clamp(7rem,16vw,13rem)] leading-none" aria-hidden="true">KICK</span>
+              <span class="kick display outline-text pointer-events-none absolute -bottom-8 -right-3 select-none text-[clamp(7rem,16vw,13rem)] leading-none" aria-hidden="true">KICK</span>
             )}
             <T as="h3" k={`disc.${it.id}.name`}
               class={`display relative ${it.feature ? 'text-[clamp(2.5rem,5vw,4rem)] metal' : 'text-3xl text-chalk'}`} />

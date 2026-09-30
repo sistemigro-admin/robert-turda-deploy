@@ -1,6 +1,44 @@
 import { dict } from '../data/content';
 
 type Lang = keyof typeof dict;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---------- Word-by-word split (hero headline, quote) ----------
+function splitWords(root: HTMLElement) {
+  let i = 0;
+  const walk = (node: Node) => {
+    for (const child of [...node.childNodes]) {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const frag = document.createDocumentFragment();
+        for (const part of child.textContent!.split(/(\s+)/)) {
+          if (!part) continue;
+          if (/^\s+$/.test(part)) { frag.append(part); continue; }
+          const w = document.createElement('span');
+          w.className = 'w';
+          w.style.setProperty('--i', String(i++));
+          w.textContent = part;
+          frag.append(w);
+        }
+        child.replaceWith(frag);
+      } else walk(child);
+    }
+  };
+  walk(root);
+}
+
+function splitAll(replay = false) {
+  if (reduced) return;
+  document.querySelectorAll<HTMLElement>('[data-split]').forEach((el) => {
+    splitWords(el);
+    if (el.dataset.split === 'hero') {
+      el.classList.remove('go');
+      if (replay) el.style.setProperty('--base', '0ms');
+      void el.offsetWidth; // commit the hidden state so the transition runs
+      el.classList.add('go');
+    }
+  });
+}
+
 const STORAGE_KEY = 'rt-lang';
 
 // ---------- Language toggle ----------
@@ -21,6 +59,7 @@ function applyLang(lang: Lang) {
   });
   document.title = d['meta.title'];
   document.querySelector('meta[name="description"]')?.setAttribute('content', d['meta.description']);
+  splitAll(true);
   document.querySelectorAll<HTMLElement>('[data-lang-opt]').forEach((el) => {
     el.classList.toggle('text-chalk', el.dataset.langOpt === lang);
     el.classList.toggle('text-ash', el.dataset.langOpt !== lang);
@@ -39,6 +78,7 @@ function storedLang(): Lang | null {
 
 let current: Lang = storedLang() ?? 'ro';
 if (current !== 'ro') applyLang(current);
+else splitAll();
 
 document.querySelectorAll('[data-lang-toggle]').forEach((btn) =>
   btn.addEventListener('click', () => {
@@ -49,8 +89,6 @@ document.querySelectorAll('[data-lang-toggle]').forEach((btn) =>
 );
 
 // ---------- Scroll reveal + stat count-up ----------
-const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
 function countUp(el: HTMLElement) {
   const target = Number(el.dataset.count);
   const suffix = el.dataset.suffix ?? '';
@@ -84,5 +122,29 @@ const io = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll('.reveal, .reveal-left, .reveal-scale, .reveal-zoom, [data-counters]')
+  .querySelectorAll('.reveal, .reveal-left, .reveal-scale, .reveal-zoom, .reveal-line, .draw, [data-counters]')
   .forEach((el) => io.observe(el));
+
+// ---------- Header: scrolled state, progress bar, active section ----------
+const header = document.getElementById('site-header');
+let ticking = false;
+function onScroll() {
+  ticking = false;
+  const max = document.documentElement.scrollHeight - innerHeight;
+  header?.classList.toggle('is-scrolled', scrollY > 24);
+  header?.style.setProperty('--progress', String(max > 0 ? Math.min(scrollY / max, 1) : 0));
+}
+addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+onScroll();
+
+const spyLinks = [...document.querySelectorAll<HTMLAnchorElement>('[data-spy]')];
+const spy = new IntersectionObserver(
+  (entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      spyLinks.forEach((a) => a.classList.toggle('is-active', a.hash === '#' + e.target.id));
+    }
+  },
+  { rootMargin: '-45% 0px -50% 0px' },
+);
+spyLinks.forEach((a) => { const t = document.querySelector(a.hash); if (t) spy.observe(t); });
