@@ -1,0 +1,76 @@
+# =============================================================================
+# CLIENT BRIEF — Robert Turda
+# =============================================================================
+# Filled from docs/client-brief.yaml (full bilingual source brief with design
+# notes). Site is bilingual (RO primary, EN via toggle); EN copy lives in the
+# *_en fields below and in src/data/content.ts.
+# =============================================================================
+
+identity:
+  name: "Robert Turda"
+  tagline: "Disciplina care face campioni. Antrenamentul care te transformă."
+  tagline_en: "The discipline that makes champions. The training that transforms you."
+  language: ro            # + en toggle
+  industry: "antrenor kickbox, box, TRX, antrenor personal — Sighetu Marmației / Ocna Șugatag"
+  logo: ""                # Text wordmark
+
+contact:
+  phone: "+40 741 541 473"
+  email: "robert_turda88@yahoo.com"
+  address: ""             # Street addresses pending from client — no map yet.
+  locations: "Sighetu Marmației & Ocna Șugatag"
+  hours: ""               # Pending — article mentions evenings 18:00–22:00.
+  socials:
+    instagram: "https://www.instagram.com/robert_turda"
+    facebook: "https://www.facebook.com/robert.turda"
+    tiktok: ""
+    linkedin: ""
+  primary_cta: call
+  whatsapp_number: ""     # Pending.
+
+offering:
+  intro: "Vicecampion mondial de kickboxing. Antrenor care a format campioni mondiali. Cursuri pentru copii, juniori și adulți — de la primul antrenament până la performanță internațională."
+  items:
+    - name: "Kickboxing"
+      description: "Antrenamente de kickboxing pentru toate nivelurile — începători, amatori și sportivi de performanță."
+      price: ""
+      image: ""
+    - name: "Box"
+      description: "Box clasic — fundamentele loviturilor, footwork, apărare și condiție fizică de înalt nivel."
+      price: ""
+      image: ""
+    - name: "TRX & Antrenament Personal"
+      description: "Antrenament personal la Gym Stronger Every Step — TRX, circuite funcționale, condiție fizică generală."
+      price: ""
+      image: ""
+    - name: "Copii & Juniori"
+      description: "Disciplină, coordonare, respect și primele tehnici de arte marțiale, într-un mediu sigur."
+      price: ""
+      image: ""
+    - name: "Pregătire Competițională"
+      description: "Pregătire specifică pentru competiții regionale, naționale și internaționale."
+      price: ""
+      image: ""
+    # Muay Thai — omitted until client confirms it is still offered.
+
+positioning:
+  audience: "Părinți, adulți și sportivi din Sighetu Marmației și Ocna Șugatag care vor un antrenor cu rezultate reale."
+  benefits:
+    - "Vicecampion Mondial Kickboxing — Cairo 2021, cat. 91kg"
+    - "A antrenat Daniel Rohnean — Campion Mondial WKF juniori 2021, la 13 ani"
+    - "Kickboxing, Box, TRX și fitness — totul într-o singură academie"
+    - "Antrenor activ din 2015"
+    - "Pentru toate vârstele și nivelurile"
+
+trust:
+  testimonials: []        # Pending from client.
+  gallery: ""             # No photos yet.
+
+visual:
+  reference_url: ""
+  vibe: "gritty championship metallic"   # Rocky Balboa — grey, white, metal, red accents
+  brand_color: "#C0C0C0"
+  accent_color: "#C0392B"
+
+meta:
+  domain: ""              # Not confirmed — serving from sistemigro.github.io/robert-turda

@@ -1,0 +1,568 @@
+# =============================================================================
+# CLIENT BRIEF — Robert Turda | Antrenor Kickbox, Box, TRX & Personal Trainer
+# =============================================================================
+# Sources: client-provided screenshot (contact details + context notes),
+# elitaromaniei.ro article (full interview, 2021), Daniel Rohnean poster image.
+# Language: RO + EN (bilingual site confirmed).
+# Structure: one-pager with scroll.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# 1. IDENTITY
+# -----------------------------------------------------------------------------
+identity:
+  name: "Robert Turda"
+                             # Personal brand — not "Academia Robert Turda"
+                             # as the page name, since the new context also
+                             # includes Gym Stronger Every Step personal trainer
+                             # role. Robert IS the brand across both contexts.
+
+  # Tagline — Caples (Tested Advertising Methods): self-interest in headline.
+  # Robert's own words from the article give the exact differentiator:
+  # "Motivația dispare în două, trei săptămâni, maxim o lună, însă cu
+  # disciplina poți persevera în continuare!"
+  # That's the real offer — not just training, but the discipline system
+  # that produces world champions (Daniel Rohnean, campion mondial WKF 2021).
+  # Tagline in both languages:
+  tagline_ro: "Disciplina care face campioni. Antrenamentul care te transformă."
+  tagline_en: "The discipline that makes champions. The training that transforms you."
+
+  language: "ro + en"        # Bilingual confirmed. RO primary, EN secondary.
+                             # Recommend language toggle in nav — not two
+                             # separate pages.
+  industry: "antrenor kickbox, box, TRX, antrenor personal — Sighetu Marmației / Ocna Șugatag"
+  logo: ""                   # Not confirmed — request from client.
+                             # May not exist as a formal logo; name as wordmark
+                             # is sufficient for this type of personal brand site.
+
+
+# -----------------------------------------------------------------------------
+# 2. CONTACT
+# =============================================================================
+# Source: client-provided screenshot.
+# -----------------------------------------------------------------------------
+contact:
+  phone: "+40 741 541 473"   # Confirmed from screenshot.
+  email: "robert_turda88@yahoo.com"
+                             # Confirmed from screenshot.
+  address: "Academia Robert Turda — Sighetu Marmației / Ocna Șugatag"
+                             # Both locations confirmed from article. Exact
+                             # street addresses not in provided data — request
+                             # from client for map embed.
+  hours: ""                  # Article: "seara de la ora 18:00 la ora 22:00
+                             # sunt în sala de sport." Confirm full schedule
+                             # with client — likely varies by discipline.
+  socials:
+    facebook: "https://www.facebook.com/robert.turda"
+                             # Confirmed from screenshot.
+    instagram: "https://www.instagram.com/robert_turda"
+                             # Confirmed from screenshot.
+    tiktok: ""
+    youtube: ""
+  primary_cta: call          # Combat sports / personal training audience in
+                             # Romania converts best on direct phone contact.
+                             # Secondary: Facebook DM.
+  whatsapp_number: ""        # Not confirmed — request from client. Likely
+                             # same as phone number; add if available.
+
+
+# -----------------------------------------------------------------------------
+# 3. OFFERING
+# =============================================================================
+# Sources: article (disciplines listed), screenshot (Kickbox, Box, TRX,
+# antrenor personal), Daniel Rohnean image (confirms active competitive coaching).
+# Prices: not available — request from client.
+# -----------------------------------------------------------------------------
+offering:
+  intro_ro: >
+    Vicecampion mondial de kickboxing. Antrenor care a format campioni mondiali.
+    Cursuri pentru copii, juniori și adulți — de la primul antrenament până
+    la performanță internațională.
+  intro_en: >
+    World vice-champion in kickboxing. Coach who trained world champions.
+    Classes for kids, juniors and adults — from the first session to
+    international competition.
+
+  items:
+    - name_ro: "Kickboxing"
+      name_en: "Kickboxing"
+      description_ro: >
+        Antrenamente de kickboxing pentru toate nivelurile — începători,
+        amatori și sportivi de performanță. Tehnici de lovitură, condiție
+        fizică, strategie de luptă. Copii și adulți.
+      description_en: >
+        Kickboxing training for all levels — beginners, amateurs and
+        competitive athletes. Striking techniques, conditioning, fight
+        strategy. Kids and adults welcome.
+      price: ""              # Request from client.
+      image: ""
+
+    - name_ro: "Box"
+      name_en: "Boxing"
+      description_ro: >
+        Box clasic — fundamentele loviturilor, footwork, apărare și
+        condiție fizică de înalt nivel. Potrivit și ca bază pentru
+        kickboxing sau MMA.
+      description_en: >
+        Classic boxing — punch fundamentals, footwork, defense and
+        high-level conditioning. Also a solid base for kickboxing or MMA.
+      price: ""              # Request from client.
+      image: ""
+
+    - name_ro: "TRX & Antrenament Personal"
+      name_en: "TRX & Personal Training"
+      description_ro: >
+        Antrenament personal la Gym Stronger Every Step — TRX, circuite
+        funcționale, condiție fizică generală. Adaptat obiectivelor tale:
+        slăbire, tonifiere sau performanță atletică.
+      description_en: >
+        Personal training at Gym Stronger Every Step — TRX, functional
+        circuits, general fitness. Tailored to your goals: weight loss,
+        toning or athletic performance.
+      price: ""              # Request from client.
+      image: ""
+
+    - name_ro: "Antrenamente Copii & Juniori"
+      name_en: "Kids & Junior Training"
+      description_ro: >
+        Programa dedicată copiilor și juniorilor — disciplină, coordonare,
+        respect și primele tehnici de arte marțiale. Mediu sigur și
+        structurat, confirmat prin rezultate la nivel național și mondial.
+      description_en: >
+        Dedicated program for kids and juniors — discipline, coordination,
+        respect and first martial arts techniques. Safe, structured
+        environment backed by national and world-level results.
+      price: ""              # Request from client.
+      image: ""
+
+    - name_ro: "Pregătire Competițională"
+      name_en: "Competition Preparation"
+      description_ro: >
+        Pregătire specifică pentru sportivi care vizează competiții
+        regionale, naționale sau internaționale. Robert Turda a antrenat
+        sportivi care au reprezentat România la Campionatele Europene și
+        Mondiale WKF.
+      description_en: >
+        Specific preparation for athletes targeting regional, national
+        or international competitions. Robert Turda has coached athletes
+        who represented Romania at WKF European and World Championships.
+      price: ""              # Request from client.
+      image: ""
+
+    # PLACEHOLDER — confirm if Muay Thai is still offered (mentioned in article
+    # as available in Academia: "box, kickbox, Muay Thai, fitness, aerobic, TRX,
+    # circuite crossfit"). Not explicitly in screenshot — verify with client.
+    - name_ro: "Muay Thai"
+      name_en: "Muay Thai"
+      description_ro: >
+        [PLACEHOLDER — confirmare cu clientul dacă este disponibil]
+      description_en: >
+        [PLACEHOLDER — confirm with client if available]
+      price: ""
+      image: ""
+
+
+# -----------------------------------------------------------------------------
+# 4. POSITIONING
+# =============================================================================
+# Built from confirmed data: elitaromaniei.ro article (2021) + screenshot.
+#
+# The differentiator is unusually strong and specific — Caples principle:
+# specificity = credibility. Robert is not "an experienced trainer." He is:
+# - Vicecampion mondial kickboxing (Cairo, 2021, cat. 91kg)
+# - Vicecampion european kickboxing (Baia Mare, 2019)
+# - Antrenor al lui Daniel Rohnean — campion mondial WKF juniori 2021
+# - Activ din 2015 ca antrenor, Academia Robert Turda fondată la Sighetu
+#   Marmației și Ocna Șugatag
+# - Disciplines: Box (din vârsta de 12 ani), Kickboxing, TRX, personal trainer
+#
+# Made to Stick (Concrete): "a format campioni mondiali" este o afirmație
+# verificabilă și rară — nu un slogan generic. Aceasta este ancora centrală
+# a întregii pagini.
+#
+# Fortune Cookie Principle: diferențiatorul real nu este "pasiune și dedicare"
+# (orice antrenor spune asta) — este dovada concretă: un elev campion mondial
+# la 13 ani, antrenorul însuși vicecampion mondial.
+# -----------------------------------------------------------------------------
+positioning:
+  audience_ro: >
+    Trei publicuri simultane — fiecare cu motivație diferită:
+    (1) Părinți din Sighetu Marmației / Ocna Șugatag care vor să înscrie
+    copiii la un sport serios, cu un antrenor care produce rezultate reale.
+    (2) Adulți care vor antrenament personal eficient — fitness, TRX,
+    pierdere în greutate sau condiție fizică generală.
+    (3) Sportivi amatori sau de performanță care vor să avanseze în kickboxing
+    sau box sub îndrumarea unui antrenor cu palmares internațional.
+
+  audience_en: >
+    Three simultaneous audiences:
+    (1) Parents from Sighetu Marmației / Ocna Șugatag looking to enroll their
+    kids in a serious sport with a coach who delivers real results.
+    (2) Adults seeking effective personal training — fitness, TRX, weight loss
+    or general conditioning.
+    (3) Amateur or competitive athletes looking to advance in kickboxing or
+    boxing under a coach with international credentials.
+
+  benefits:
+    - ro: "Vicecampion mondial kickboxing (Cairo 2021, cat. 91kg) — nu e un titlu de perete, e dovada că știe ce predă"
+      en: "World kickboxing vice-champion (Cairo 2021, 91kg) — not a wall title, proof he knows what he teaches"
+    - ro: "A antrenat Daniel Rohnean — campion mondial WKF juniori 2021, la 13 ani"
+      en: "Coached Daniel Rohnean — WKF junior world champion 2021, aged 13"
+    - ro: "Disciplinele predate: Kickboxing, Box, Muay Thai, TRX, fitness, circuite — totul într-o singură academie"
+      en: "Disciplines taught: Kickboxing, Boxing, Muay Thai, TRX, fitness, circuits — all in one academy"
+    - ro: "Activ din 2015 ca antrenor — nu un proiect nou, o academie cu istoric și rezultate demonstrabile"
+      en: "Active as a coach since 2015 — not a new project, an academy with history and demonstrable results"
+    - ro: "Accesibil tuturor vârstelor și nivelurilor — de la primul pumn la campionat mondial"
+      en: "Accessible to all ages and levels — from the first punch to world championship"
+
+  key_quote_ro: >
+    "Motivația dispare în două, trei săptămâni, maxim o lună, însă cu
+    disciplina poți persevera în continuare!"
+    — Robert Turda (elitaromaniei.ro, 2021)
+                             # Use this as a hero quote or section break.
+                             # It captures the entire training philosophy in
+                             # one sentence — confirm with Robert that he's
+                             # comfortable with it being used on the site.
+  key_quote_en: >
+    "Motivation fades in two or three weeks, maybe a month — but discipline
+    keeps you going."
+    — Robert Turda
+
+
+# -----------------------------------------------------------------------------
+# 5. TRUST
+# =============================================================================
+# Confirmed credentials — all verifiable, all specific (Sugarman: specificity
+# = credibility). These are NOT invented — sourced from elitaromaniei.ro.
+# -----------------------------------------------------------------------------
+trust:
+  credentials:
+    - ro: "Vicecampion Mondial Kickboxing WKF — Cairo, Egipt, 2021 (categoria 91kg)"
+      en: "WKF Kickboxing World Vice-Champion — Cairo, Egypt, 2021 (91kg category)"
+    - ro: "Vicecampion European Kickboxing WKF — Baia Mare, 2019"
+      en: "WKF Kickboxing European Vice-Champion — Baia Mare, 2019"
+    - ro: "Licență de instructor kickboxing — confirmat din articol"
+      en: "Licensed kickboxing instructor — confirmed from article"
+
+  notable_athlete:
+    name: "Daniel Rohnean"
+    achievement_ro: "Campion Mondial WKF Juniori 2021 (categoria 54kg) — pregătit de Robert Turda din 2018"
+    achievement_en: "WKF Junior World Champion 2021 (54kg) — trained by Robert Turda since 2018"
+    image: "Daniel Rohnean promotional poster — confirmed from client screenshot"
+                             # Request high-resolution version of the poster
+                             # for use on site. Strong visual trust element.
+
+  academy_history_ro: >
+    Academia Robert Turda fondată în 2015 la Ocna Șugatag, extinsă ulterior
+    la Sighetu Marmației. Dotată cu echipamente de ultimă generație. Discipline
+    disponibile: box, kickboxing, Muay Thai, fitness, aerobic, TRX, crossfit.
+  academy_history_en: >
+    Academia Robert Turda founded in 2015 in Ocna Șugatag, later expanded
+    to Sighetu Marmației. Equipped with state-of-the-art equipment. Disciplines
+    available: boxing, kickboxing, Muay Thai, fitness, aerobics, TRX, crossfit.
+
+  testimonials: []           # None in provided data — request from client.
+                             # Ideal: parents of trained kids, adult students,
+                             # competitive athletes. Format: name + result.
+  gallery: "assets/"         # No photos provided yet beyond the Daniel Rohnean
+                             # poster. Request from client:
+                             # (1) Photos of Robert training / competing
+                             # (2) Academy interior / equipment
+                             # (3) Students / competition moments
+
+
+# -----------------------------------------------------------------------------
+# 6. VISUAL DIRECTION
+# =============================================================================
+# Source: client instruction ("Rocky Balboa style — gri cu alb, direcție
+# metalică, accente mici de roșu") + Daniel Rohnean poster (dark background,
+# high-contrast fight photography, red accent text).
+#
+# Rocky Balboa visual reference: gritty, cinematic, masculine, earned —
+# not glossy or corporate. Raw concrete + metal + sweat + championship.
+# Think: dark grey concrete texture, metallic silver highlights, deep red
+# accents used sparingly, high-contrast black/white photography.
+# -----------------------------------------------------------------------------
+visual:
+  reference: "Rocky Balboa film aesthetic — grey, white, metallic, red accents"
+  reference_url: ""          # No external site reference provided — build from
+                             # the visual description and Daniel Rohnean poster.
+
+  vibe: "gritty championship — dark metallic grey, earned through discipline,
+         raw but precise. Rocky Balboa meets modern fight sports branding."
+
+  structure: "one-pager"     # Confirmed by client.
+
+  # --- COLOR PALETTE ---
+  background_color: "#1C1C1E"
+                             # Deep charcoal — not pure black. Feels like
+                             # concrete / aged metal. Dominant page background.
+
+  secondary_background: "#2C2C2E"
+                             # Slightly lighter charcoal for alternating
+                             # section backgrounds — creates depth without
+                             # breaking the dark theme.
+
+  brand_color: "#C0C0C0"    # Metallic silver — primary accent for headings,
+                             # borders, and decorative elements. Sampled from
+                             # the metallic/gritty direction requested.
+                             # Use as the "shine" on the dark background.
+
+  accent_color: "#C0392B"   # Deep championship red — used SPARINGLY.
+                             # Only for: primary CTA button, key stat numbers
+                             # (2x vicecampion, 1 campion mondial format),
+                             # and the single most important word in each
+                             # section headline. Never as a background color.
+
+  text_color: "#F0F0F0"     # Off-white — body text. Not pure white (too harsh
+                             # against dark backgrounds). Warm enough to read
+                             # comfortably.
+
+  text_muted: "#8E8E93"     # Muted grey — for secondary labels, captions,
+                             # and supporting text. Keeps hierarchy clean.
+
+  # --- TEXTURE DIRECTION ---
+  texture:
+    concept: "Metallic + concrete — two layers throughout the site"
+    layers:
+      - name: "Concrete grain"
+        description: >
+          Fine noise/grain texture overlay at 6–10% opacity on dark backgrounds.
+          Prevents flat digital look — makes the page feel physical, earned.
+          CSS: SVG feTurbulence or subtle noise PNG overlay.
+      - name: "Metallic sheen"
+        description: >
+          Linear gradient on section headers and the hero title:
+          silver → white → silver, left to right, like light catching metal.
+          Applied to large display text only — not body copy.
+          CSS: background-clip: text with metallic gradient.
+      - name: "Red underline / strike"
+        description: >
+          Single-pixel red horizontal line used as a section divider and
+          as an underline accent on the most important word in hero headlines.
+          The ONLY place red appears in body sections (besides the CTA button).
+
+  # --- TYPOGRAPHY ---
+  typography:
+    display: "condensed bold — Impact, Bebas Neue, or Anton"
+                             # Daniel Rohnean poster (screenshot) uses a bold
+                             # condensed sport typeface for "ROHNEAN DANIEL"
+                             # and the red accent text. Apply same system to
+                             # Robert's page. Wide tracking on ALL-CAPS labels.
+    body: "clean sans-serif — Inter, Roboto, or similar"
+                             # Readable at all sizes, light weight on dark bg.
+    accent: "none"           # No script fonts — inconsistent with Rocky/fight
+                             # aesthetic. Hard edges only.
+    sizing:
+      hero_title: "clamp(3rem, 8vw, 7rem) — massive, cinematic"
+      section_title: "clamp(2rem, 4vw, 3.5rem)"
+      body: "1rem / 1.6 line-height"
+      stat_number: "clamp(3rem, 6vw, 5rem) — bold, red accent"
+
+  # --- ONE-PAGER SECTIONS WITH CONTENT & IMAGE PLACEMENT ---
+  sections:
+
+    - id: "hero"
+      title_ro: null
+      title_en: null
+      layout: >
+        Full-viewport. Dark background with concrete grain texture.
+        Robert's name in massive metallic condensed type, centered or
+        left-aligned. Tagline below. Red CTA button. Photography full-bleed
+        behind with dark overlay (70% opacity) so text reads clearly.
+      image:
+        description: "Fight/training photo of Robert — ideally mid-action or
+                       authoritative stance. Request high-res from client.
+                       Daniel Rohnean poster style is the visual reference."
+        placement: "Full-bleed background, 70% dark overlay"
+        animation: "Slow zoom out (scale 1.08 → 1.0) over 6s — cinematic
+                    Ken Burns effect. Headline fades in after 300ms."
+      copy_ro:
+        headline: "DISCIPLINA CARE FACE CAMPIONI"
+        subheadline: "Vicecampion Mondial Kickboxing · Antrenor al Campionului Mondial WKF"
+        cta: "Începe Antrenamentul"
+      copy_en:
+        headline: "THE DISCIPLINE THAT MAKES CHAMPIONS"
+        subheadline: "Kickboxing World Vice-Champion · Coach of the WKF World Champion"
+        cta: "Start Training"
+      animation:
+        - "Name slides in from left, 600ms cubic-bezier(0.22,1,0.36,1)"
+        - "Credentials fade in below, delay 300ms"
+        - "CTA button scales up from 0.9, delay 500ms, then red pulse glow at idle"
+
+    - id: "credentials"
+      title_ro: "PALMARES"
+      title_en: "ACHIEVEMENTS"
+      layout: >
+        Full-width dark section. Three stat blocks side by side — large red
+        number, metallic label below. Concrete texture background.
+        Simple, punchy, impossible to miss.
+      stats:
+        - number: "2×"
+          label_ro: "Vicecampion Mondial & European"
+          label_en: "World & European Vice-Champion"
+        - number: "1"
+          label_ro: "Campion Mondial format (Daniel Rohnean, WKF 2021)"
+          label_en: "World Champion coached (Daniel Rohnean, WKF 2021)"
+        - number: "9+"
+          label_ro: "Ani de antrenat campioni"
+          label_en: "Years coaching champions"
+      animation: "Numbers count up from 0 on first viewport entry, 800ms"
+
+    - id: "about"
+      title_ro: "POVESTEA"
+      title_en: "THE STORY"
+      layout: >
+        Two-column: photo left, text right. Slightly lighter dark background
+        (#2C2C2E) to break from hero. Red thin vertical line separator
+        between photo and text column.
+      image:
+        description: "Portrait of Robert — authoritative, not smiling broadly.
+                       Arms crossed or holding gloves. Dark background."
+        placement: "Left column, 45% width. No border — bleeds to edge."
+        animation: "Slide in from left, fade, 500ms on scroll entry."
+      copy_source_ro: >
+        Use condensed version of the elitaromaniei.ro article narrative —
+        confirm with Robert which parts he wants highlighted:
+        Box din vârsta de 12 ani → Kickboxing → Vicecampion Mondial →
+        Fondarea Academiei 2015 → Daniel Rohnean campion mondial 2021.
+        Voice: first person, direct, no fluff.
+        Key quote to feature: "Motivația dispare... dar cu disciplina poți
+        persevera."
+      copy_source_en: "Translated version of the same narrative."
+
+    - id: "disciplines"
+      title_ro: "DISCIPLINE"
+      title_en: "DISCIPLINES"
+      layout: >
+        3-column card grid on desktop, 1-column on mobile. Each card:
+        dark background, metallic border on hover, discipline name in
+        condensed bold, short description, red arrow icon. Concrete texture.
+      cards:
+        - "Kickboxing"
+        - "Box / Boxing"
+        - "TRX & Antrenament Personal / Personal Training"
+        - "Copii & Juniori / Kids & Juniors"
+        - "Pregătire Competițională / Competition Prep"
+        - "Muay Thai [PLACEHOLDER — confirmare cu clientul]"
+      hover_interaction: >
+        On hover: metallic silver border appears, background lightens slightly
+        to #2C2C2E, red accent arrow shifts right 4px. 150ms ease.
+      animation: "Cards stagger fade-in + translateY(20px→0), 80ms between each"
+
+    - id: "daniel_rohnean"
+      title_ro: "UN ELEV. UN CAMPION MONDIAL."
+      title_en: "ONE STUDENT. ONE WORLD CHAMPION."
+      layout: >
+        Split section — darker background (#111). Daniel Rohnean poster
+        image left (full height), story text right. Red accent on his name.
+        This is the strongest trust proof on the page — give it full visual
+        weight.
+      image:
+        file: "Daniel Rohnean promotional poster (from client screenshot)"
+        placement: "Left half of section, full height, slight red tint overlay
+                    on the poster to integrate it into the site palette."
+        animation: "Fade in + scale 1.04→1.0, 600ms."
+      copy_ro: >
+        Daniel Rohnean a început antrenamentele la Academia Robert Turda
+        în 2018, la vârsta de 10 ani. În octombrie 2021, la 13 ani,
+        a cucerit titlul de Campion Mondial WKF la juniori (categoria 54kg)
+        la Cairo, Egipt — câștigând finala în fața unui sportiv gazdă.
+      copy_en: >
+        Daniel Rohnean began training at Academia Robert Turda in 2018,
+        aged 10. In October 2021, at 13 years old, he became WKF Junior
+        World Champion (54kg) in Cairo, Egypt — winning the final against
+        a home-country athlete.
+
+    - id: "contact_cta"
+      title_ro: "ÎNCEPE AZI"
+      title_en: "START TODAY"
+      layout: >
+        Full-width. Darkest section (#111 or pure #000). Centered.
+        Large condensed headline, red CTA button, phone + social links below.
+        Single red horizontal line at top as divider.
+      copy_ro:
+        headline: "PRIMUL PAS SPRE CAMPIONAT ÎNCEPE ACUM"
+        subheadline: "Kickboxing · Box · TRX · Antrenament Personal — Sighetu Marmației & Ocna Șugatag"
+        cta_primary: "Sună Acum"
+        cta_secondary: "sau scrie pe Facebook"
+      copy_en:
+        headline: "THE FIRST STEP TOWARD CHAMPIONSHIP STARTS NOW"
+        subheadline: "Kickboxing · Boxing · TRX · Personal Training — Sighetu Marmației & Ocna Șugatag"
+        cta_primary: "Call Now"
+        cta_secondary: "or message on Facebook"
+      phone_display: "0741 541 473"
+      animation: >
+        Headline fades in + scale 0.96→1.0. CTA red button pulses at idle.
+        On hover: white text on red bg → red text on white bg, 150ms.
+        On press: scale 0.97x, 80ms.
+
+  # --- GLOBAL ANIMATIONS ---
+  animations:
+    philosophy: >
+      Cinematic and precise — like a fight. Movements are deliberate,
+      fast, and land with weight. No bouncing, no playful easing.
+      Every animation should feel like a jab: sharp in, clean out.
+    scroll_reveal:
+      type: "fade-in + translateY(24px → 0)"
+      duration: "500ms"
+      easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+      trigger: "IntersectionObserver, threshold 0.12"
+    hover:
+      buttons: "color swap, 150ms ease — no gradients, just a clean switch"
+      cards: "border appear + slight background lift, 150ms"
+      nav: "red underline draws left to right, 200ms"
+    press:
+      all: "scale 0.97x, 80ms — snappy physical feedback"
+    page_load:
+      sequence: >
+        1. Background texture fades in (200ms)
+        2. Hero image Ken Burns starts
+        3. Name slides in from left (600ms)
+        4. Credentials line fades in (delay 300ms)
+        5. CTA button scales up (delay 500ms)
+        6. Idle pulse on CTA begins
+
+
+# -----------------------------------------------------------------------------
+# 7. META
+# -----------------------------------------------------------------------------
+meta:
+  domain: ""                 # Not confirmed — request from client.
+                             # Suggestion: robertturda.ro sau academiarobertturda.ro
+  seo_title_ro: "Robert Turda — Antrenor Kickboxing, Box & Personal Trainer | Sighetu Marmației"
+  seo_title_en: "Robert Turda — Kickboxing, Boxing & Personal Trainer | Sighetu Marmației"
+  seo_description_ro: >
+    Vicecampion Mondial Kickboxing. Antrenorul care a format Campionul Mondial
+    WKF Daniel Rohnean. Kickboxing, box, TRX și antrenament personal la
+    Academia Robert Turda — Sighetu Marmației și Ocna Șugatag.
+  seo_description_en: >
+    Kickboxing World Vice-Champion. The coach who trained WKF World Champion
+    Daniel Rohnean. Kickboxing, boxing, TRX and personal training at
+    Academia Robert Turda — Sighetu Marmației and Ocna Șugatag.
+
+
+# =============================================================================
+# MISSING DATA — SUMMARY
+# =============================================================================
+# CONFIRMED: full name, contact details (phone + email + socials), disciplines,
+# full biography (from elitaromaniei.ro), credentials (2× vicecampion,
+# 1 campion mondial format), Daniel Rohnean story + poster image, Academy
+# history + locations (Sighetu Marmației + Ocna Șugatag), visual direction
+# (Rocky Balboa / metallic grey-white-red), structure (one-pager, RO+EN).
+#
+# STILL NEEDED before /build:
+#   1. Exact street addresses for both locations (for map embed)
+#   2. Operating hours / training schedule
+#   3. Prices per discipline / session type
+#   4. High-resolution photo of Robert (training / portrait / fight)
+#   5. Academy interior / equipment photos
+#   6. Competition photos (ideally Robert competing or on podium)
+#   7. High-resolution Daniel Rohnean poster (client has it)
+#   8. Domain name
+#   9. WhatsApp number (if different from phone)
+#  10. Testimonials — parents, students, competitive athletes
+#  11. Confirm Muay Thai is still offered at the Academy
+#  12. Confirm Robert approves quote usage from elitaromaniei.ro article
+# =============================================================================
