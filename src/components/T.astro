@@ -1,0 +1,17 @@
+---
+// Translatable text. Renders the RO string; the language toggle swaps it via data-i18n.
+import { t } from '../data/content';
+
+interface Props {
+  k: string;
+  as?: string;
+  html?: boolean;
+  class?: string;
+  [attr: string]: unknown;
+}
+const { k, as = 'span', html = false, class: className, ...rest } = Astro.props;
+const Tag = as as any;
+---
+{html
+  ? <Tag class={className} data-i18n-html={k} set:html={t(k)} {...rest} />
+  : <Tag class={className} data-i18n={k} {...rest}>{t(k)}</Tag>}

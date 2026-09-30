@@ -1,0 +1,35 @@
+---
+import T from './T.astro';
+import Icon from './Icon.astro';
+
+// Muay Thai omitted until the client confirms it's still offered.
+const items = [
+  { id: 'kick', cls: 'md:col-span-2 lg:col-span-2 lg:row-span-1', feature: true },
+  { id: 'box', cls: '' },
+  { id: 'trx', cls: '' },
+  { id: 'kids', cls: '' },
+  { id: 'comp', cls: 'md:col-span-2 lg:col-span-1' },
+];
+---
+<section id="discipline" class="bg-pit" aria-labelledby="discipline-title">
+  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-10">
+    <T as="h2" k="disc.title" id="discipline-title" class="display metal section-title reveal" />
+    <T as="p" k="disc.intro" class="reveal mt-5 max-w-[52ch] text-lg text-silver" />
+
+    <ul class="mt-12 grid gap-px md:grid-cols-2 lg:grid-cols-3">
+      {items.map((it, i) => (
+        <li class={`reveal ${it.cls}`} style={`--d:${i * 80}ms`}>
+          <a href="#contact" class={`card group flex h-full flex-col p-7 sm:p-9 ${it.feature ? 'min-h-[20rem] justify-end overflow-hidden' : 'min-h-[16rem]'}`}>
+            {it.feature && (
+              <span class="display outline-text pointer-events-none absolute -bottom-8 -right-3 select-none text-[clamp(7rem,16vw,13rem)] leading-none" aria-hidden="true">KICK</span>
+            )}
+            <T as="h3" k={`disc.${it.id}.name`}
+              class={`display relative ${it.feature ? 'text-[clamp(2.5rem,5vw,4rem)] metal' : 'text-3xl text-chalk'}`} />
+            <T as="p" k={`disc.${it.id}.desc`} class={`relative mt-4 text-chalk/75 ${it.feature ? 'max-w-[46ch] text-lg' : ''}`} />
+            <span class="arrow relative mt-auto pt-7"><Icon name="arrow" size={24} /></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

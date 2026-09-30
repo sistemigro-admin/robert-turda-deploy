@@ -1,0 +1,44 @@
+---
+import T from './T.astro';
+
+const tape = ['weight', 'style', 'start', 'coach', 'base'];
+const timeline = ['t1', 't2', 't3', 't4', 't5', 't6'];
+---
+<section id="povestea" class="bg-steel" aria-labelledby="povestea-title">
+  <div class="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[minmax(0,5fr)_1px_minmax(0,7fr)] lg:gap-14 lg:px-10">
+
+    <!-- Tale of the tape: stands in for the portrait until photos arrive -->
+    <aside class="plate reveal-left self-start p-7 sm:p-9 lg:sticky lg:top-24" aria-labelledby="tape-title">
+      <div class="flex items-baseline justify-between gap-4">
+        <T as="h3" k="tape.title" id="tape-title" class="label !text-silver" />
+        <span class="display text-sm tracking-[0.2em] text-blood">WKF</span>
+      </div>
+      <p class="display outline-text mt-5 text-[clamp(5.5rem,12vw,9rem)] leading-[0.8]" aria-hidden="true">RT</p>
+      <dl class="mt-8">
+        {tape.map((k) => (
+          <div class="tape-row flex items-baseline justify-between gap-6 py-3.5">
+            <T as="dt" k={`tape.${k}.k`} class="text-sm text-ash" />
+            <T as="dd" k={`tape.${k}.v`} class="text-right font-semibold text-chalk" />
+          </div>
+        ))}
+      </dl>
+    </aside>
+
+    <div class="hidden bg-blood lg:block" aria-hidden="true"></div>
+
+    <div>
+      <T as="h2" k="story.title" id="povestea-title" class="display metal section-title reveal" />
+      <T as="p" k="story.lead" class="reveal mt-6 max-w-[58ch] text-xl leading-relaxed text-chalk sm:text-2xl" />
+
+      <ol class="mt-12 border-l border-white/10">
+        {timeline.map((k, i) => (
+          <li class="reveal relative pb-9 pl-8 last:pb-0" style={`--d:${i * 60}ms`}>
+            <span class={`absolute -left-[5px] top-2 size-[9px] ${k === 't5' ? 'bg-blood' : 'bg-silver'}`} aria-hidden="true"></span>
+            <T as="p" k={`story.${k}.when`} class="display text-2xl text-silver" />
+            <T as="p" k={`story.${k}.what`} class="mt-1.5 max-w-[56ch] text-[1.05rem] text-chalk/80" />
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>

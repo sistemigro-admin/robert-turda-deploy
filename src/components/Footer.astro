@@ -1,0 +1,19 @@
+---
+import T from './T.astro';
+import Icon from './Icon.astro';
+import { contact } from '../data/content';
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-white/5 bg-concrete">
+  <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-10">
+    <div>
+      <p class="display metal text-2xl">Robert Turda</p>
+      <T as="p" k="footer.places" class="mt-1 text-sm text-ash" />
+    </div>
+    <div class="flex items-center gap-2">
+      <a href={contact.facebook} target="_blank" rel="noopener" aria-label="Facebook" class="flex size-11 items-center justify-center text-silver transition-colors hover:text-chalk"><Icon name="facebook" /></a>
+      <a href={contact.instagram} target="_blank" rel="noopener" aria-label="Instagram" class="flex size-11 items-center justify-center text-silver transition-colors hover:text-chalk"><Icon name="instagram" /></a>
+    </div>
+    <p class="text-sm text-ash">© {year} Robert Turda. <T k="footer.rights" /></p>
+  </div>
+</footer>

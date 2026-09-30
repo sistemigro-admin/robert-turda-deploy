@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import { t, contact } from '../data/content';
+
+const base = import.meta.env.BASE_URL;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SportsActivityLocation',
+  name: 'Academia Robert Turda',
+  founder: { '@type': 'Person', name: 'Robert Turda', jobTitle: 'Antrenor Kickboxing, Box & Personal Trainer' },
+  telephone: contact.phone,
+  email: contact.email,
+  areaServed: ['Sighetu Marmației', 'Ocna Șugatag'],
+  sameAs: [contact.facebook, contact.instagram],
+  url: canonical.href,
+};
+---
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('meta.title')}</title>
+    <meta name="description" content={t('meta.description')} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <meta name="theme-color" content="#1C1C1E" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t('meta.title')} />
+    <meta property="og:description" content={t('meta.description')} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:bg-chalk focus:px-4 focus:py-2 focus:text-pit" data-i18n="skip">{t('skip')}</a>
+    <slot />
+    <script>
+      import '../scripts/site';
+    </script>
+  </body>
+</html>

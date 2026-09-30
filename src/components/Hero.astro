@@ -1,0 +1,31 @@
+---
+import T from './T.astro';
+import Icon from './Icon.astro';
+import { contact } from '../data/content';
+---
+<section id="top" class="relative isolate flex min-h-[100svh] items-end overflow-hidden pt-16">
+  <div class="hero-bg kenburns -z-20" aria-hidden="true"></div>
+  <div class="hero-shade -z-10" aria-hidden="true"></div>
+
+  <div class="mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-10 lg:pb-24">
+    <h1 class="display metal load-name text-[clamp(4.25rem,15vw,13.5rem)] leading-[0.86]">
+      Robert<br />Turda
+    </h1>
+
+    <T as="p" k="hero.headline" html
+      class="display load-fade mt-6 max-w-3xl text-[clamp(1.75rem,4.2vw,3.25rem)] leading-[1.12] text-chalk" />
+
+    <T as="p" k="hero.sub" class="load-fade-2 mt-5 max-w-xl text-lg font-medium text-silver sm:text-xl" />
+
+    <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
+      <a href="#contact" class="btn btn-red pulse">
+        <T k="hero.cta" />
+        <Icon name="arrow" size={18} />
+      </a>
+      <a href={contact.facebook} target="_blank" rel="noopener" class="btn btn-ghost load-cta">
+        <Icon name="facebook" size={18} />
+        <T k="hero.secondary" />
+      </a>
+    </div>
+  </div>
+</section>

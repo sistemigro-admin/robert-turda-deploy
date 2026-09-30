@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sistemigro.github.io/robert-turda/sitemap-index.xml

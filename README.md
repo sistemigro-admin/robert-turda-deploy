@@ -1,43 +1,22 @@
-# Astro Starter Kit: Minimal
+# Robert Turda — landing page
 
-```sh
-npm create astro@latest -- --template minimal
+One-page bilingual (RO/EN) site for Robert Turda, kickboxing/boxing coach and personal trainer in Sighetu Marmației & Ocna Șugatag. Built with Astro + Tailwind, deployed to GitHub Pages on every push to `main`.
+
+- Live: https://sistemigro.github.io/robert-turda/
+- Brief: `brief.yaml` (filled), full client brief with design notes in `docs/client-brief.yaml`
+- Copy (both languages): `src/data/content.ts`
+- Sections: `src/components/`
+
+```bash
+npm install
+npm run dev     # http://localhost:4321/robert-turda/
+npm run build   # -> dist/
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Still needed from the client
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Photos: Robert (hero + portrait), academy interior, competitions, hi-res Daniel Rohnean poster
+- Street addresses for both gyms (map embed), training schedule, prices
+- WhatsApp number, domain, testimonials
+- Confirm Muay Thai is still offered (currently not on the site)
+- Approve the story copy and use of the elitaromaniei.ro quote
