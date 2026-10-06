@@ -88,33 +88,13 @@ document.querySelectorAll('[data-lang-toggle]').forEach((btn) =>
   }),
 );
 
-// ---------- Scroll reveal + stat count-up ----------
-function countUp(el: HTMLElement) {
-  const target = Number(el.dataset.count);
-  const suffix = el.dataset.suffix ?? '';
-  if (reduced) { el.textContent = target + suffix; return; }
-  const start = performance.now();
-  const dur = 800;
-  const tick = (now: number) => {
-    const p = Math.min((now - start) / dur, 1);
-    const eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(target * eased) + suffix;
-    if (p < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-}
-
-if (!reduced) {
-  document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => { el.textContent = '0' + (el.dataset.suffix ?? ''); });
-}
-
+// ---------- Scroll reveal ----------
 const io = new IntersectionObserver(
   (entries) => {
     for (const e of entries) {
       if (!e.isIntersecting) continue;
       const el = e.target as HTMLElement;
       el.classList.add('is-in');
-      el.querySelectorAll<HTMLElement>('[data-count]').forEach(countUp);
       io.unobserve(el);
     }
   },
@@ -122,7 +102,7 @@ const io = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll('.reveal, .reveal-left, .reveal-scale, .reveal-zoom, .reveal-line, .draw, [data-counters]')
+  .querySelectorAll('.reveal, .reveal-left, .reveal-scale, .reveal-zoom, .reveal-line, .draw')
   .forEach((el) => io.observe(el));
 
 // ---------- Header: scrolled state, progress bar, active section ----------

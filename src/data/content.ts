@@ -10,15 +10,12 @@ export const contact = {
   instagram: 'https://www.instagram.com/robert_turda',
 };
 
-const coachingSince = 2015;
-export const yearsCoaching = new Date().getFullYear() - coachingSince;
-
 type Dict = Record<string, string>;
 
 const ro: Dict = {
   'meta.title': 'Robert Turda — Antrenor Kickboxing, Box & Personal Trainer | Sighetu Marmației',
   'meta.description':
-    'Vicecampion Mondial Kickboxing. Antrenorul care a format Campionul Mondial WKF Daniel Rohnean. Kickboxing, box, TRX și antrenament personal la Academia Robert Turda — Sighetu Marmației și Ocna Șugatag.',
+    'Vicecampion Mondial Kickboxing, Campion European 2022. Antrenorul care a format Campionul Mondial WKF Daniel Rohnean. Kickboxing, box, TRX și antrenament personal la Academia Robert Turda — Sighetu Marmației.',
 
   'nav.stats': 'Palmares',
   'nav.story': 'Povestea',
@@ -30,14 +27,20 @@ const ro: Dict = {
   'skip': 'Sari la conținut',
 
   'hero.headline': 'Disciplina care face <u>campioni</u>',
-  'hero.sub': 'Vicecampion Mondial Kickboxing. Antrenorul Campionului Mondial WKF.',
+  'hero.sub': 'Vicecampion Mondial Kickboxing. Campion European 2022.',
   'hero.cta': 'Începe antrenamentul',
   'hero.secondary': 'Scrie pe Facebook',
 
   'stats.title': 'Palmares',
-  'stats.1': 'Vicecampion Mondial & European',
-  'stats.2': 'Campion Mondial format — Daniel Rohnean, WKF 2021',
-  'stats.3': 'Ani de antrenat campioni',
+  'stats.1.year': '2019',
+  'stats.1.title': 'Vicecampion European',
+  'stats.1.place': 'Baia Mare, România',
+  'stats.2.year': '2021',
+  'stats.2.title': 'Vicecampion Mondial',
+  'stats.2.place': 'Cairo, Egipt',
+  'stats.3.year': '2022',
+  'stats.3.title': 'Campion European',
+  'stats.3.place': 'Wels, Austria',
 
   'story.title': 'Povestea',
   'story.lead':
@@ -47,13 +50,15 @@ const ro: Dict = {
   'story.t2.when': 'Kickboxing',
   'story.t2.what': 'Trec la kickboxing și obțin licența de instructor.',
   'story.t3.when': '2015',
-  'story.t3.what': 'Fondez Academia Robert Turda la Ocna Șugatag, apoi o extind la Sighetu Marmației.',
+  'story.t3.what': 'Fondez Academia Robert Turda la Sighetu Marmației.',
   'story.t4.when': '2019',
   'story.t4.what': 'Vicecampion European WKF la Baia Mare.',
   'story.t5.when': '2021',
   'story.t5.what': 'Vicecampion Mondial WKF la Cairo, 91 kg. În același turneu, elevul meu Daniel Rohnean devine campion mondial.',
-  'story.t6.when': 'Azi',
-  'story.t6.what': 'Antrenez la Academie și ca antrenor personal la Gym Stronger Every Step.',
+  'story.t6.when': '2022',
+  'story.t6.what': 'Campion European la Wels, Austria.',
+  'story.t7.when': 'Azi',
+  'story.t7.what': 'Antrenez la Academia Robert Turda și ca antrenor personal la 4U Gym Sighet.',
 
   'tape.title': 'Fișa luptătorului',
   'tape.weight.k': 'Categoria',
@@ -65,7 +70,7 @@ const ro: Dict = {
   'tape.coach.k': 'Antrenor din',
   'tape.coach.v': '2015',
   'tape.base.k': 'Săli',
-  'tape.base.v': 'Sighetu Marmației, Ocna Șugatag',
+  'tape.base.v': 'Sighetu Marmației',
 
   'quote.text': 'Motivația dispare în două, trei săptămâni, maxim o lună, însă cu disciplina poți persevera în continuare!',
 
@@ -80,13 +85,13 @@ const ro: Dict = {
     'Box clasic — fundamentele loviturilor, footwork, apărare și condiție fizică de înalt nivel. O bază solidă și pentru kickboxing sau MMA.',
   'disc.trx.name': 'TRX & Antrenament Personal',
   'disc.trx.desc':
-    'La Gym Stronger Every Step — TRX, circuite funcționale, condiție fizică generală. Adaptat obiectivului tău: slăbire, tonifiere sau performanță.',
+    'La Academia Robert Turda — TRX, circuite funcționale, condiție fizică generală. Antrenament personal și la 4U Gym Sighet. Adaptat obiectivului tău: slăbire, tonifiere sau performanță.',
   'disc.kids.name': 'Copii & Juniori',
   'disc.kids.desc':
     'Disciplină, coordonare, respect și primele tehnici de arte marțiale. Un mediu sigur și structurat, cu rezultate la nivel național și mondial.',
   'disc.comp.name': 'Pregătire Competițională',
   'disc.comp.desc':
-    'Pentru sportivii care țintesc competiții regionale, naționale sau internaționale — pregătire pe care o fac pentru Campionatele Europene și Mondiale WKF.',
+    'Pentru sportivii care țintesc competiții regionale, naționale sau internaționale — pregătire pe care o fac pentru Campionatele Europene și Mondiale.',
 
   'champ.title': 'Un elev. Un campion mondial.',
   'champ.body':
@@ -99,19 +104,19 @@ const ro: Dict = {
 
   'contact.kicker': 'Începe azi',
   'contact.headline': 'Primul pas spre campionat începe acum',
-  'contact.sub': 'Kickboxing, box, TRX și antrenament personal în Sighetu Marmației și Ocna Șugatag.',
+  'contact.sub': 'Kickboxing, box, TRX și antrenament personal în Sighetu Marmației.',
   'contact.cta': 'Sună acum',
   'contact.fb': 'sau scrie pe Facebook',
   'contact.email': 'Email',
 
   'footer.rights': 'Toate drepturile rezervate.',
-  'footer.places': 'Sighetu Marmației & Ocna Șugatag',
+  'footer.places': 'Sighetu Marmației',
 };
 
 const en: Dict = {
   'meta.title': 'Robert Turda — Kickboxing, Boxing & Personal Trainer | Sighetu Marmației',
   'meta.description':
-    'Kickboxing World Vice-Champion. The coach who trained WKF World Champion Daniel Rohnean. Kickboxing, boxing, TRX and personal training at Academia Robert Turda — Sighetu Marmației and Ocna Șugatag.',
+    'Kickboxing World Vice-Champion, European Champion 2022. The coach who trained WKF World Champion Daniel Rohnean. Kickboxing, boxing, TRX and personal training at Academia Robert Turda — Sighetu Marmației.',
 
   'nav.stats': 'Record',
   'nav.story': 'Story',
@@ -123,14 +128,20 @@ const en: Dict = {
   'skip': 'Skip to content',
 
   'hero.headline': 'The discipline that makes <u>champions</u>',
-  'hero.sub': 'Kickboxing World Vice-Champion. Coach of the WKF World Champion.',
+  'hero.sub': 'Kickboxing World Vice-Champion. European Champion 2022.',
   'hero.cta': 'Start training',
   'hero.secondary': 'Message on Facebook',
 
   'stats.title': 'Record',
-  'stats.1': 'World & European Vice-Champion',
-  'stats.2': 'World Champion coached — Daniel Rohnean, WKF 2021',
-  'stats.3': 'Years coaching champions',
+  'stats.1.year': '2019',
+  'stats.1.title': 'European Vice-Champion',
+  'stats.1.place': 'Baia Mare, Romania',
+  'stats.2.year': '2021',
+  'stats.2.title': 'World Vice-Champion',
+  'stats.2.place': 'Cairo, Egypt',
+  'stats.3.year': '2022',
+  'stats.3.title': 'European Champion',
+  'stats.3.place': 'Wels, Austria',
 
   'story.title': 'The story',
   'story.lead':
@@ -140,13 +151,15 @@ const en: Dict = {
   'story.t2.when': 'Kickboxing',
   'story.t2.what': 'I move to kickboxing and earn my instructor licence.',
   'story.t3.when': '2015',
-  'story.t3.what': 'I found Academia Robert Turda in Ocna Șugatag, then expand it to Sighetu Marmației.',
+  'story.t3.what': 'I found Academia Robert Turda in Sighetu Marmației.',
   'story.t4.when': '2019',
   'story.t4.what': 'WKF European Vice-Champion in Baia Mare.',
   'story.t5.when': '2021',
   'story.t5.what': 'WKF World Vice-Champion in Cairo, 91 kg. At the same event, my student Daniel Rohnean becomes world champion.',
-  'story.t6.when': 'Today',
-  'story.t6.what': 'I coach at the Academy and as a personal trainer at Gym Stronger Every Step.',
+  'story.t6.when': '2022',
+  'story.t6.what': 'European Champion in Wels, Austria.',
+  'story.t7.when': 'Today',
+  'story.t7.what': 'I coach at Academia Robert Turda and as a personal trainer at 4U Gym Sighet.',
 
   'tape.title': 'Tale of the tape',
   'tape.weight.k': 'Weight class',
@@ -158,7 +171,7 @@ const en: Dict = {
   'tape.coach.k': 'Coaching since',
   'tape.coach.v': '2015',
   'tape.base.k': 'Gyms',
-  'tape.base.v': 'Sighetu Marmației, Ocna Șugatag',
+  'tape.base.v': 'Sighetu Marmației',
 
   'quote.text': 'Motivation fades in two or three weeks, maybe a month — but discipline keeps you going.',
 
@@ -172,13 +185,13 @@ const en: Dict = {
     'Classic boxing — punch fundamentals, footwork, defence and high-level conditioning. Also a solid base for kickboxing or MMA.',
   'disc.trx.name': 'TRX & Personal Training',
   'disc.trx.desc':
-    'At Gym Stronger Every Step — TRX, functional circuits, general fitness. Built around your goal: weight loss, toning or athletic performance.',
+    'At Academia Robert Turda — TRX, functional circuits, general fitness. Personal training also at 4U Gym Sighet. Built around your goal: weight loss, toning or athletic performance.',
   'disc.kids.name': 'Kids & Juniors',
   'disc.kids.desc':
     'Discipline, coordination, respect and first martial arts techniques. A safe, structured environment with national and world-level results.',
   'disc.comp.name': 'Competition Prep',
   'disc.comp.desc':
-    'For athletes targeting regional, national or international events — the same preparation behind athletes at WKF European and World Championships.',
+    'For athletes targeting regional, national or international events — the same preparation behind athletes at European and World Championships.',
 
   'champ.title': 'One student. One world champion.',
   'champ.body':
@@ -191,13 +204,13 @@ const en: Dict = {
 
   'contact.kicker': 'Start today',
   'contact.headline': 'The first step toward championship starts now',
-  'contact.sub': 'Kickboxing, boxing, TRX and personal training in Sighetu Marmației and Ocna Șugatag.',
+  'contact.sub': 'Kickboxing, boxing, TRX and personal training in Sighetu Marmației.',
   'contact.cta': 'Call now',
   'contact.fb': 'or message on Facebook',
   'contact.email': 'Email',
 
   'footer.rights': 'All rights reserved.',
-  'footer.places': 'Sighetu Marmației & Ocna Șugatag',
+  'footer.places': 'Sighetu Marmației',
 };
 
 export const dict = { ro, en };

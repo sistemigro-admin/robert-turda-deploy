@@ -11,14 +11,14 @@ identity:
   tagline: "Disciplina care face campioni. Antrenamentul care te transformă."
   tagline_en: "The discipline that makes champions. The training that transforms you."
   language: ro            # + en toggle
-  industry: "antrenor kickbox, box, TRX, antrenor personal — Sighetu Marmației / Ocna Șugatag"
+  industry: "antrenor kickbox, box, TRX, antrenor personal — Sighetu Marmației"
   logo: ""                # Text wordmark
 
 contact:
   phone: "+40 741 541 473"
   email: "robert_turda88@yahoo.com"
   address: ""             # Street addresses pending from client — no map yet.
-  locations: "Sighetu Marmației & Ocna Șugatag"
+  locations: "Sighetu Marmației"   # Ocna Șugatag dropped — no gym there anymore (BB-67)
   hours: ""               # Pending — article mentions evenings 18:00–22:00.
   socials:
     instagram: "https://www.instagram.com/robert_turda"
@@ -40,7 +40,7 @@ offering:
       price: ""
       image: ""
     - name: "TRX & Antrenament Personal"
-      description: "Antrenament personal la Gym Stronger Every Step — TRX, circuite funcționale, condiție fizică generală."
+      description: "TRX și circuite funcționale la Academia Robert Turda; antrenament personal la 4U Gym Sighet."
       price: ""
       image: ""
     - name: "Copii & Juniori"
@@ -54,9 +54,11 @@ offering:
     # Muay Thai — omitted until client confirms it is still offered.
 
 positioning:
-  audience: "Părinți, adulți și sportivi din Sighetu Marmației și Ocna Șugatag care vor un antrenor cu rezultate reale."
+  audience: "Părinți, adulți și sportivi din Sighetu Marmației care vor un antrenor cu rezultate reale."
   benefits:
-    - "Vicecampion Mondial Kickboxing — Cairo 2021, cat. 91kg"
+    - "Vicecampion European — Baia Mare 2019"
+    - "Vicecampion Mondial Kickboxing — Cairo, Egipt 2021, cat. 91kg"
+    - "Campion European — Wels, Austria 2022"
     - "A antrenat Daniel Rohnean — Campion Mondial WKF juniori 2021, la 13 ani"
     - "Kickboxing, Box, TRX și fitness — totul într-o singură academie"
     - "Antrenor activ din 2015"
