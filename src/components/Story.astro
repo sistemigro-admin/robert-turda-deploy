@@ -2,7 +2,7 @@
 import T from './T.astro';
 
 const tape = ['weight', 'style', 'start', 'coach', 'base'];
-const timeline = ['t1', 't2', 't3', 't4', 't5', 't6'];
+const timeline = ['t1', 't2', 't3', 't4', 't5', 't6', 't7'];
 ---
 <section id="povestea" class="bg-steel" aria-labelledby="povestea-title">
   <div class="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[minmax(0,5fr)_1px_minmax(0,7fr)] lg:gap-14 lg:px-10">
@@ -33,7 +33,7 @@ const timeline = ['t1', 't2', 't3', 't4', 't5', 't6'];
       <ol class="timeline reveal-line relative mt-12">
         {timeline.map((k, i) => (
           <li class="reveal relative pb-9 pl-8 last:pb-0" style={`--d:${i * 60}ms`}>
-            <span class={`dot absolute -left-[4px] top-2 size-[9px] ${k === 't5' ? 'bg-blood' : 'bg-silver'}`} aria-hidden="true"></span>
+            <span class={`dot absolute -left-[4px] top-2 size-[9px] ${k === 't6' ? 'bg-blood' : 'bg-silver'}`} aria-hidden="true"></span>
             <T as="p" k={`story.${k}.when`} class="display text-2xl text-silver" />
             <T as="p" k={`story.${k}.what`} class="mt-1.5 max-w-[56ch] text-[1.05rem] text-chalk/80" />
           </li>
