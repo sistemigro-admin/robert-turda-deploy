@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { t, contact } from '../data/content';
+import Analytics from '@vercel/analytics/astro';
 
 const base = import.meta.env.BASE_URL;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -43,5 +44,6 @@ const jsonLd = {
     <script>
       import '../scripts/site';
     </script>
+    <Analytics />
   </body>
 </html>
