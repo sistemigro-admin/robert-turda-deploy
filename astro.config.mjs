@@ -7,8 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sistemigro.github.io/robert-turda',
-  base: '/robert-turda/',
+  site: 'https://www.academia-robert-turda.com',
   output: 'static',
   vite: {
     plugins: [tailwindcss()]
